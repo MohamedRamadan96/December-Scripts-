@@ -1,0 +1,8 @@
+
+update WaitingPatient  set VisitStatusID=8 
+
+
+
+ from  WaitingPatient  inner join invoice on invoice.visitid=WaitingPatient.WaitingID
+
+where WaitingPatient.arrdate between '01-27-2019' and '12-01-2019'  and invoice.EclaimSent=1

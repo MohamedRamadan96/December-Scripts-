@@ -1,0 +1,1 @@
+Update invoicedetail set feeservicetypeid =6 where feeservicetypeid =3 and invoiceid in (select invoiceid from invoice where clinicid =3)

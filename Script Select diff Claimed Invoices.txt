@@ -1,0 +1,13 @@
+
+
+
+select  WaitingPatient.* from WaitingPatient  inner join 
+
+[ClinicPro12].[dbo].[WaitingPatient] T1 on T1.WaitingID=WaitingPatient.WaitingID
+
+
+where WaitingPatient.VisitStatusID=8 and T1.VisitStatusID<>8
+
+
+
+and WaitingPatient.arrdate between '03-01-2019' and '12-01-2019' order by ArrDate
